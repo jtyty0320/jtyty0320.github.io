@@ -539,3 +539,24 @@ article h3 {
   border-color: transparent;
   color: var(--global-theme-color);
 }
+
+/* ---------- generous paragraph spacing ---------- */
+.post article p,
+.cy-bio p,
+.proj-body p {
+  margin-bottom: 1.45rem;
+}
+.post article h3,
+article h3 {
+  margin-top: 3.2rem;
+  margin-bottom: 0.9rem;
+}
+.cy-videos {
+  margin: 1.8rem 0 2.4rem;
+}
+.cy-sec {
+  margin-top: 4rem;
+}
+.cy-tags {
+  margin-top: 1.6rem;
+}
