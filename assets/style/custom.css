@@ -521,3 +521,21 @@ article h3 {
   font-weight: 750;
   letter-spacing: -0.015em;
 }
+
+/* ---------- patent status pill ---------- */
+.cy-pill {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  margin-right: 0.35rem;
+  background: var(--cy-soft);
+  border: 1px solid var(--cy-line);
+  color: var(--cy-muted);
+}
+.cy-pill-on {
+  background: color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+  border-color: transparent;
+  color: var(--global-theme-color);
+}
