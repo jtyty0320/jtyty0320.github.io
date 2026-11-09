@@ -249,7 +249,8 @@ ul.cy-list li {
 }
 .publications .row > .abbr abbr.badge {
   display: inline-block;
-  width: auto !important;
+  width: fit-content !important;
+  max-width: 100% !important;
   align-self: flex-start;
   font-size: 0.7rem;
   font-weight: 700;
@@ -283,9 +284,10 @@ ul.cy-list li {
   margin: 0;
 }
 .publications .row > [class*="col-sm-"]:not(.abbr) {
-  flex: 1 1 auto;
-  max-width: none;
-  width: auto;
+  flex: 1 1 0% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  width: auto !important;
   padding: 0;
 }
 .publications .title {
@@ -382,9 +384,15 @@ h2.cy-pub-sec {
 }
 
 /* ---------- footer ---------- */
-footer.fixed-bottom,
-footer {
+html body footer,
+html body footer.fixed-bottom {
   font-size: 0.78rem;
+  background: var(--global-bg-color) !important;
+  color: var(--cy-muted) !important;
+  border-top: 1px solid var(--cy-line);
+}
+html body footer a {
+  color: var(--cy-muted) !important;
 }
 
 /* ---------- mobile ---------- */
