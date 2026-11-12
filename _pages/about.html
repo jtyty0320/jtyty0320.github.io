@@ -1,0 +1,122 @@
+---
+layout: about
+title: About
+permalink: /
+subtitle: Ph.D. Candidate &middot; Mechanical Engineering &middot; KAIST
+
+profile:
+  align: right
+  image: prof_pic.jpg # replace assets/img/prof_pic.jpg with your own photo (same file name)
+  image_circular: false
+  more_info: >
+    <p class="cy-contact"><a href="mailto:cy.chung@kaist.ac.kr">cy.chung@kaist.ac.kr</a></p>
+    <p class="cy-contact"><a href="https://scholar.google.com/citations?user=xOHG348AAAAJ&hl=en">Google Scholar</a> &middot; <a href="https://github.com/jtyty0320">GitHub</a></p>
+    <p>Human-Robot Interaction Lab, KAIST</p>
+    <p>#7116, N7-4, 291 Daehak-ro, Daejeon</p>
+
+selected_papers: false
+social: false
+
+announcements:
+  enabled: false # rendered inside the page body below
+  scrollable: true
+  limit: 5
+
+latest_posts:
+  enabled: false
+---
+
+<link rel="stylesheet" href="{{ '/assets/style/custom.css' | relative_url }}">
+
+<div class="cy-bio">
+<p>I am a Ph.D. candidate in the Department of Mechanical Engineering at KAIST, advised by Prof. Ki-Uk Kyung in the Human-Robot Interaction Lab.</p>
+<p>My research focuses on <strong>tactile sensors shared by humans and robots</strong>. I design optical fiber-based fingertip sensors that can be worn on a human hand during demonstration and mounted on a robot hand during execution. The same sensor captures contact location, force magnitude, and force distribution in both settings, so that tactile information from human demonstrations can be transferred directly to robotic manipulation. Because the signal travels as light, these sensors are immune to electromagnetic interference.</p>
+<p>I have also developed optical fiber-based <strong>force myography (FMG)</strong> systems for hand gesture recognition, joint angle estimation, and grasping force estimation, and <strong>soft wearable and rehabilitation robots</strong> driven by shape memory alloy (SMA) artificial muscles.</p>
+<div class="cy-tags">
+<span>Tactile Sensing</span><span>Optical Fiber Sensors</span><span>Human-to-Robot Skill Transfer</span><span>Force Myography</span><span>Soft Actuators</span><span>Wearable Robots</span>
+</div>
+</div>
+
+<section class="cy-sec">
+<h2 class="cy-h">News <a class="cy-more" href="{{ '/news/' | relative_url }}">All news &rarr;</a></h2>
+{% include news.liquid limit=true %}
+</section>
+
+<section class="cy-sec">
+<h2 class="cy-h">Selected Publications <a class="cy-more" href="{{ '/publications/' | relative_url }}">All publications &rarr;</a></h2>
+{% include selected_papers.liquid %}
+</section>
+
+{% assign cv = site.data.cv.cv.sections %}
+
+<section class="cy-sec">
+<h2 class="cy-h">Education</h2>
+{%- for e in cv.Education -%}
+{%- assign s = e.start_date | slice: 0, 4 -%}
+{%- if e.end_date == 'present' -%}{%- assign t = 'Present' -%}{%- else -%}{%- assign t = e.end_date | slice: 0, 4 -%}{%- endif -%}
+<div class="cy-row">
+<div class="cy-date">{{ s }} &ndash; {{ t }}</div>
+<div class="cy-body">
+<div class="cy-title">{{ e.studyType }} in {{ e.area }}</div>
+<div class="cy-sub">{{ e.institution }}</div>
+{%- if e.highlights -%}<ul class="cy-list">{%- for h in e.highlights -%}<li>{{ h }}</li>{%- endfor -%}</ul>{%- endif -%}
+</div>
+</div>
+{%- endfor -%}
+</section>
+
+<section class="cy-sec">
+<h2 class="cy-h">Experience</h2>
+{%- for e in cv.Experience -%}
+{%- assign s = e.start_date | slice: 0, 4 -%}
+{%- assign t = e.end_date | slice: 0, 4 -%}
+<div class="cy-row">
+<div class="cy-date">{% if s == t %}{{ s }}{% else %}{{ s }} &ndash; {{ t }}{% endif %}</div>
+<div class="cy-body">
+<div class="cy-title">{{ e.position }}</div>
+<div class="cy-sub">{{ e.company }}</div>
+{%- if e.summary -%}<div class="cy-note">{{ e.summary }}</div>{%- endif -%}
+</div>
+</div>
+{%- endfor -%}
+</section>
+
+<section class="cy-sec">
+<h2 class="cy-h">Honors &amp; Awards</h2>
+{%- for e in cv['Honors and Awards'] -%}
+<div class="cy-row cy-row-tight">
+<div class="cy-date">{{ e.date | slice: 0, 4 }}</div>
+<div class="cy-body"><span class="cy-title">{{ e.title }}</span><span class="cy-sub-inline">{{ e.awarder }}</span></div>
+</div>
+{%- endfor -%}
+</section>
+
+<section class="cy-sec">
+<h2 class="cy-h">Patents</h2>
+{%- for e in cv.Patents -%}
+<div class="cy-row">
+<div class="cy-date">{{ e.date | slice: 0, 4 }}</div>
+<div class="cy-body">
+<div class="cy-title">{{ e.title }}</div>
+<div class="cy-sub">{{ e.inventors }}</div>
+<div class="cy-note"><span class="cy-pill{% if e.status == 'Registered' %} cy-pill-on{% endif %}">{{ e.status }}</span> {{ e.number }}</div>
+</div>
+</div>
+{%- endfor -%}
+</section>
+
+<section class="cy-sec">
+<h2 class="cy-h">Research Projects</h2>
+{%- for e in cv['Research Projects'] -%}
+{%- assign s = e.start_date | slice: 0, 4 -%}
+{%- if e.end_date == 'present' -%}{%- assign t = 'Present' -%}{%- else -%}{%- assign t = e.end_date | slice: 0, 4 -%}{%- endif -%}
+<div class="cy-row">
+<div class="cy-date">{% if s == t %}{{ s }}{% else %}{{ s }} &ndash; {{ t }}{% endif %}</div>
+<div class="cy-body">
+<div class="cy-title">{{ e.name }}</div>
+<div class="cy-sub">{{ e.name_ko }}</div>
+<div class="cy-note">{{ e.role }} &middot; Funded by {{ e.funder }}</div>
+</div>
+</div>
+{%- endfor -%}
+</section>

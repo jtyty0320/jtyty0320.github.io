@@ -1,0 +1,9 @@
+# this file contains the social media links and usernames of the author
+# the socials will be displayed in the order they are defined here
+# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
+email: cy.chung@kaist.ac.kr # your email address
+scholar_userid: xOHG348AAAAJ # your Google Scholar ID
+github_username: jtyty0320 # your GitHub user name
+# orcid_id: # your ORCID ID
+# linkedin_username: # your LinkedIn user name
+# cv_pdf: /assets/pdf/CV_Chongyoung_Chung.pdf # uncomment after adding a public PDF of your CV

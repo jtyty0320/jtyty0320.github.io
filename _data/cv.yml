@@ -1,0 +1,134 @@
+cv:
+  name: Chongyoung Chung
+  label: Ph.D. Candidate, Mechanical Engineering, KAIST
+  email: cy.chung@kaist.ac.kr
+  location: Daejeon, Republic of Korea
+  sections:
+    Education:
+    - institution: Korea Advanced Institute of Science and Technology (KAIST)
+      location: Daejeon, Korea
+      url: https://www.kaist.ac.kr/en/
+      area: Mechanical Engineering
+      studyType: Ph.D.
+      start_date: 2023-02
+      end_date: present
+      highlights:
+      - 'Thesis: Design of Optical Fiber-based Fingertip Tactile Sensor for Human-Robot Manipulation Skill Transfer'
+      - 'Advisor: Prof. Ki-Uk Kyung'
+    - institution: Korea Advanced Institute of Science and Technology (KAIST)
+      location: Daejeon, Korea
+      url: https://www.kaist.ac.kr/en/
+      area: Mechanical Engineering
+      studyType: M.S.
+      start_date: 2021-02
+      end_date: 2023-02
+      highlights:
+      - 'Thesis: Design of a Wearable Assistive Robot for the Shoulder Abduction using Petal Mechanism driven by SMA Actuators'
+      - 'Advisor: Prof. Ki-Uk Kyung'
+    - institution: Pohang University of Science and Technology (POSTECH)
+      location: Pohang, Korea
+      url: https://www.postech.ac.kr/eng/
+      area: Mechanical Engineering
+      studyType: B.S.
+      start_date: 2017-02
+      end_date: 2021-02
+      highlights:
+      - GPA 3.97/4.3 (Summa Cum Laude)
+      - 'Advisor: Prof. Geunbae Lim'
+    Experience:
+    - company: New York University (NYU), Tandon School of Engineering
+      position: Visiting Research Scholar
+      location: New York, USA
+      start_date: 2023-10
+      end_date: 2024-09
+      summary: Medical Robotics and Interactive Intelligent Technologies (MERIIT) Lab, Prof. S. Farokh Atashzar
+    - company: SK Hynix Inc.
+      position: Student Research Intern
+      location: Korea
+      start_date: 2019-06
+      end_date: 2019-08
+      summary: PKG technology development
+    - company: Samsung Electronics Co., Ltd.
+      position: Student Research Intern
+      location: Korea
+      start_date: 2019-01
+      end_date: 2019-02
+      summary: IT & Mobile Communications (IM)
+    - company: Samsung Electronics Co., Ltd.
+      position: Student Research Intern
+      location: Korea
+      start_date: 2018-07
+      end_date: 2018-08
+      summary: Network Business
+    Honors and Awards:
+    - title: Future Scholarship (우덕미래장학금)
+      date: 2025-12
+      awarder: Wooduk Foundation, Korea
+    - title: Best Paper Award Finalist
+      date: 2024-07
+      awarder: International Conference on Ubiquitous Robots (UR) 2024
+    - title: Volunteer Scholarship (Student Activity Excellence)
+      date: 2021-02
+      awarder: POSTECH, Korea
+    - title: Muk-Ae Scholarship (Academic Excellence)
+      date: 2020-09
+      awarder: POSTECH, Korea
+    - title: Seokcheon World Culture Exploration Scholarship
+      date: 2019-06
+      awarder: POSTECH, Korea
+    - title: Kwanjeong Educational Foundation Scholarship
+      date: 2019-02
+      awarder: Kwanjeong Educational Foundation, Korea
+    - title: Student Mentoring Program Scholarship
+      date: 2019-02
+      awarder: POSTECH, Korea
+    - title: Residential College Advisor Scholarship
+      date: 2019-02
+      awarder: POSTECH, Korea
+    Patents:
+    - date: 2025-07
+      title: 인공 근육과 인공관절을 응용한 상지 착용형 로봇
+      status: Registered
+      number: KR10-2841180 (2025.07.28)
+      inventors: 경기욱, 정재연, 현규진, 정총영, 권순철, 송원경
+    - date: 2025-05
+      title: 체간 균형 유지 및 재활을 위한 웨어러블 장치 및 그 방법
+      status: Registered
+      number: KR10-2810385 (2025.05.15)
+      inventors: 경기욱, 정재연, 현규진, 정총영, 송원경, 복수경, 안소영
+    - date: 2024-12
+      title: 센서, 센서의 동작 방법, 및 웨어러블 디바이스
+      status: Filed
+      number: KR10-2024-0198440 (2024.12.27), US19/233,857 (2025.06.10)
+      inventors: 경기욱, 정총영, 문희주
+    Research Projects:
+    - start_date: 2026-04
+      end_date: present
+      name: Enhancing Manipulation Capabilities of Robotic Hands Equipped with Robotic Sensing Fingernails
+      name_ko: 감지형 손톱을 장착한 로봇 핸드의 조작 기능 향상 연구
+      role: Lead Researcher
+      funder: KAIST
+    - start_date: 2025-09
+      end_date: 2026-04
+      name: AI Platform Center for Manufacturing
+      name_ko: 첨단제조혁신센터
+      role: Lead Researcher
+      funder: Ministry of Education (교육부)
+    - start_date: 2025-04
+      end_date: 2025-09
+      name: Soft Material-based High-resolution Multi-modal Haptic Interface Module
+      name_ko: 유연 소재 기반 고해상도 다중촉감 인터페이스 모듈 기술
+      role: Lead Researcher
+      funder: IITP (정보통신기획평가원)
+    - start_date: 2023-01
+      end_date: 2024-12
+      name: Development of Exploration Robot for Customs Inspection of Containerized Cargo
+      name_ko: 원격 조종이 가능한 화물 검사용 다자유도 유연로봇 시스템 개발
+      role: Researcher
+      funder: Korea Customs Service (관세청)
+    - start_date: 2021-02
+      end_date: 2022-12
+      name: Translational Research of Multi-freedom Soft Upper Extremity Rehabilitation Robot including Shoulder and Elbow
+      name_ko: 어깨와 팔꿉을 포함한 다자유도 소프트 상지재활로봇 중개연구
+      role: Researcher
+      funder: National Rehabilitation Center (국립재활원)

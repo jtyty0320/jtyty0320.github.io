@@ -1,0 +1,38 @@
+"RA-L":
+  url: https://www.ieee-ras.org/publications/ra-l
+  color: "#00629b"
+
+"AISY":
+  url: https://advanced.onlinelibrary.wiley.com/journal/26404567
+  color: "#7a1f3d"
+
+"npj Flex. Electron.":
+  url: https://www.nature.com/npjflexelectron/
+  color: "#c0392b"
+
+"ICRA":
+  color: "#1f6f4a"
+
+"ICRA-W":
+  color: "#2e8b57"
+
+"IROS":
+  color: "#4b3f9e"
+
+"WHC":
+  color: "#b9770e"
+
+"HAPTICS":
+  color: "#b9770e"
+
+"UR":
+  color: "#2c7fb8"
+
+"RO-MAN":
+  color: "#6c3483"
+
+"RoboSoft":
+  color: "#117a65"
+
+"MRS":
+  color: "#5d6d7e"

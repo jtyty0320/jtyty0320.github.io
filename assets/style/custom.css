@@ -1,0 +1,581 @@
+/* =====================================================================
+   Custom look for Chongyoung Chung's homepage (on top of al-folio)
+   Loaded from each page body, so it comes after the theme CSS.
+   ===================================================================== */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css");
+
+:root:root {
+  --global-theme-color: #1d4ed8;
+  --global-hover-color: #1d4ed8;
+  --cy-muted: #6b7280;
+  --cy-line: #e5e7eb;
+  --cy-soft: #f5f7fb;
+  --cy-text: #111827;
+}
+html[data-theme="dark"]:root {
+  --global-theme-color: #7aa7ff;
+  --global-hover-color: #7aa7ff;
+  --cy-muted: #9ca3af;
+  --cy-line: #2f3440;
+  --cy-soft: #23262d;
+  --cy-text: #e5e7eb;
+}
+
+/* ---------- base typography ---------- */
+html body {
+  font-family:
+    "Pretendard Variable",
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    "Apple SD Gothic Neo",
+    "Noto Sans KR",
+    sans-serif;
+  font-weight: 400;
+  letter-spacing: -0.003em;
+  -webkit-font-smoothing: antialiased;
+}
+html body p,
+html body li {
+  line-height: 1.7;
+}
+html body a {
+  text-decoration: none;
+}
+html body a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+html body h1,
+html body h2,
+html body h3 {
+  font-family: inherit;
+}
+
+/* ---------- navbar ---------- */
+#navbar .navbar-brand,
+.navbar .navbar-brand {
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+.navbar .nav-link {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+/* ---------- page headers ---------- */
+.post-header .post-title {
+  font-size: 2.6rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  margin-bottom: 0.2rem;
+}
+.post-header .post-title .font-weight-bold {
+  font-weight: 800;
+}
+.post-header .desc,
+.post-header .post-description {
+  color: var(--cy-muted);
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+/* ---------- profile block ---------- */
+.profile img {
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(17, 24, 39, 0.12);
+}
+.profile .more-info {
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--cy-muted);
+  margin-top: 0.9rem;
+}
+.profile .more-info p {
+  margin: 0;
+  line-height: 1.55;
+}
+.profile .more-info .cy-contact {
+  font-weight: 600;
+}
+
+/* ---------- bio ---------- */
+.cy-bio p {
+  font-size: 1.02rem;
+  color: var(--cy-text);
+}
+.cy-bio strong {
+  font-weight: 650;
+}
+.cy-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1.1rem 0 0.5rem;
+}
+.cy-tags span {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--global-theme-color) 10%, transparent);
+  color: var(--global-theme-color);
+}
+
+/* ---------- sections ---------- */
+.cy-sec {
+  clear: both;
+  margin-top: 3rem;
+}
+h2.cy-h {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 1.35rem;
+  font-weight: 750;
+  letter-spacing: -0.015em;
+  padding-bottom: 0.55rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--cy-text);
+}
+.cy-more {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+/* CV-style rows */
+.cy-row {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr;
+  gap: 1rem;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid var(--cy-line);
+}
+.cy-row:last-child {
+  border-bottom: 0;
+}
+.cy-row-tight {
+  padding: 0.55rem 0;
+}
+.cy-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--cy-muted);
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.12rem;
+}
+.cy-title {
+  font-weight: 650;
+  color: var(--cy-text);
+}
+.cy-sub {
+  color: var(--cy-muted);
+  font-size: 0.93rem;
+}
+.cy-sub-inline {
+  color: var(--cy-muted);
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+}
+.cy-note {
+  font-size: 0.9rem;
+  margin-top: 0.15rem;
+}
+ul.cy-list {
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.92rem;
+}
+ul.cy-list li {
+  line-height: 1.6;
+}
+
+/* ---------- news ---------- */
+.news table {
+  width: 100%;
+}
+.news table th,
+.news table td {
+  padding: 0.55rem 0 !important;
+  border-bottom: 1px solid var(--cy-line);
+  vertical-align: top;
+  font-size: 0.95rem;
+}
+.news table tr:last-child th,
+.news table tr:last-child td {
+  border-bottom: 0;
+}
+.news table th {
+  width: 8.5rem !important;
+  font-weight: 600;
+  color: var(--cy-muted);
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+}
+.news .table-responsive {
+  max-height: none !important;
+}
+
+/* ---------- publications ---------- */
+.publications ol.bibliography {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+.publications ol.bibliography > li {
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--cy-line);
+}
+.publications ol.bibliography > li:last-child {
+  border-bottom: 0;
+}
+.publications ol.bibliography > li > .row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.25rem;
+  margin: 0;
+}
+.publications .row > .abbr {
+  flex: 0 0 200px;
+  max-width: 200px;
+  width: 200px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.publications .row > .abbr abbr.badge {
+  display: inline-block;
+  max-width: max-content !important;
+  align-self: flex-start;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 0.25rem 0.55rem;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  border: 0;
+}
+.publications .row > .abbr abbr.badge a,
+.publications .row > .abbr abbr.badge div {
+  color: #fff;
+  text-decoration: none;
+}
+.publications .row > .abbr figure {
+  margin: 0;
+  height: 125px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  border: 1px solid var(--cy-line);
+  border-radius: 10px;
+  padding: 4px;
+  overflow: hidden;
+}
+.publications .row > .abbr picture {
+  display: contents;
+}
+/* keep the image box at the image's own aspect ratio so click-to-zoom is not distorted */
+.publications .row > .abbr img.preview {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: none !important;
+  cursor: zoom-in;
+}
+.publications .row > [class*="col-sm-"]:not(.abbr) {
+  flex: 1 1 0% !important;
+  min-width: 0 !important;
+  max-width: none !important;
+  width: auto !important;
+  padding: 0;
+}
+.publications .title {
+  font-weight: 700;
+  font-size: 1.01rem;
+  line-height: 1.45;
+  color: var(--cy-text);
+  margin-bottom: 0.2rem;
+}
+.publications .author {
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+.publications .author em,
+.publications .author .self {
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.publications .periodical {
+  font-size: 0.9rem;
+  color: var(--cy-muted);
+}
+.publications .periodical em {
+  color: var(--cy-text);
+}
+.publications .links {
+  margin-top: 0.5rem;
+}
+.publications .links .btn,
+.publications .links a.btn {
+  font-size: 0.72rem;
+  font-weight: 650;
+  letter-spacing: 0.03em;
+  border-radius: 999px;
+  padding: 0.18rem 0.75rem;
+  border: 1px solid var(--cy-line);
+  background: var(--cy-soft);
+  color: var(--cy-text);
+  margin-right: 0.3rem;
+}
+.publications .links .btn:hover {
+  border-color: var(--global-theme-color);
+  color: var(--global-theme-color);
+  text-decoration: none;
+}
+.publications .links .award.btn {
+  background: color-mix(in srgb, #f59e0b 16%, transparent);
+  border-color: color-mix(in srgb, #f59e0b 40%, transparent);
+  color: #b45309;
+}
+html[data-theme="dark"] .publications .links .award.btn {
+  color: #fbbf24;
+}
+.publications h2.bibliography {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--cy-muted);
+  text-align: left;
+  margin: 2rem 0 0.2rem;
+  padding: 0;
+  border: 0;
+  position: static;
+}
+h2.cy-pub-sec {
+  font-size: 1.35rem;
+  font-weight: 750;
+  letter-spacing: -0.015em;
+  padding-bottom: 0.55rem;
+  margin: 2.5rem 0 0.5rem;
+  border-bottom: 2px solid var(--cy-text);
+}
+
+/* ---------- research cards ---------- */
+.projects .card {
+  border: 1px solid var(--cy-line);
+  border-radius: 14px;
+  box-shadow: none;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease;
+}
+.projects .card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 28px rgba(17, 24, 39, 0.1);
+}
+.projects .card {
+  overflow: hidden;
+}
+.projects .card img.card-img-top,
+.projects .card .card-img-top img,
+.projects .card figure img {
+  width: 100%;
+  height: 210px;
+  object-fit: contain;
+  background: #fff;
+  padding: 12px;
+  border-bottom: 1px solid var(--cy-line);
+  border-radius: 0;
+  box-shadow: none !important;
+}
+.projects .card figure,
+.projects .card picture {
+  margin: 0;
+}
+.projects .card .card-title {
+  font-weight: 750;
+  font-size: 1.15rem;
+}
+.projects .card .card-text {
+  color: var(--cy-muted);
+}
+
+/* ---------- footer ---------- */
+html body footer,
+html body footer.fixed-bottom {
+  font-size: 0.78rem;
+  background: var(--global-bg-color) !important;
+  color: var(--cy-muted) !important;
+  border-top: 1px solid var(--cy-line);
+}
+html body footer a {
+  color: var(--cy-muted) !important;
+}
+
+/* ---------- mobile ---------- */
+@media (max-width: 640px) {
+  .post-header .post-title {
+    font-size: 2rem;
+  }
+  .profile {
+    float: none !important;
+    width: 70% !important;
+    margin: 0 auto 1.2rem !important;
+  }
+  .cy-row {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+  .news table th {
+    width: 6.5rem !important;
+  }
+  .publications ol.bibliography > li > .row {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .publications .row > .abbr {
+    flex: 0 0 auto;
+    width: 100%;
+    max-width: 100%;
+  }
+  .publications .row > .abbr figure {
+    width: 100%;
+    height: 240px;
+  }
+  html body footer,
+  html body footer.fixed-bottom {
+    position: static;
+  }
+  html body {
+    padding-bottom: 0;
+  }
+}
+
+/* ---------- videos ---------- */
+.cy-videos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.2rem;
+  margin: 1.5rem 0 0.5rem;
+}
+.cy-videos figure {
+  margin: 0;
+}
+.cy-yt {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--cy-line);
+  background: #000;
+}
+.cy-yt video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.cy-yt iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.cy-videos figcaption {
+  font-size: 0.85rem;
+  color: var(--cy-muted);
+  margin-top: 0.4rem;
+}
+.publications .abstract.hidden video,
+.publications .abstract.hidden iframe {
+  width: 100%;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+  border-radius: 10px;
+}
+
+/* ---------- article subsection headings ---------- */
+.post article h3,
+article h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  margin: 2rem 0 0.6rem;
+}
+.post > article > h2,
+.post article > h2 {
+  font-weight: 750;
+  letter-spacing: -0.015em;
+}
+
+/* ---------- patent status pill ---------- */
+.cy-pill {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  margin-right: 0.35rem;
+  background: var(--cy-soft);
+  border: 1px solid var(--cy-line);
+  color: var(--cy-muted);
+}
+.cy-pill-on {
+  background: color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+  border-color: transparent;
+  color: var(--global-theme-color);
+}
+
+/* ---------- generous paragraph spacing ---------- */
+.post article p,
+.cy-bio p,
+.proj-body p {
+  margin-bottom: 1.45rem;
+}
+.post article h3,
+article h3 {
+  margin-top: 3.2rem;
+  margin-bottom: 0.9rem;
+}
+.cy-videos {
+  margin: 1.8rem 0 2.4rem;
+}
+.cy-sec {
+  margin-top: 4rem;
+}
+.cy-tags {
+  margin-top: 1.6rem;
+}
+
+/* ---------- award block (certificate image) ---------- */
+.publications .award.hidden img,
+.publications div.award img {
+  display: block;
+  max-width: min(100%, 560px);
+  height: auto;
+  margin: 0.6rem 0 0.4rem;
+  border: 1px solid var(--cy-line);
+  border-radius: 8px;
+  cursor: zoom-in;
+}
+.publications div.award.hidden,
+.publications div.award.open {
+  border: 0 !important;
+  padding: 0 !important;
+  background: none !important;
+}
