@@ -265,22 +265,32 @@ ul.cy-list li {
   color: #fff;
   text-decoration: none;
 }
-.publications .row > .abbr img.preview,
-.publications .row > .abbr .preview,
-.publications .row > .abbr figure img {
-  width: 100%;
-  max-width: 200px;
+.publications .row > .abbr figure {
+  margin: 0;
   height: 125px;
-  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #fff;
   border: 1px solid var(--cy-line);
   border-radius: 10px;
-  box-shadow: none !important;
   padding: 4px;
+  overflow: hidden;
 }
-.publications .row > .abbr figure,
 .publications .row > .abbr picture {
-  margin: 0;
+  display: contents;
+}
+/* keep the image box at the image's own aspect ratio so click-to-zoom is not distorted */
+.publications .row > .abbr img.preview {
+  width: auto !important;
+  height: auto !important;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border: 0;
+  border-radius: 6px;
+  box-shadow: none !important;
+  cursor: zoom-in;
 }
 .publications .row > [class*="col-sm-"]:not(.abbr) {
   flex: 1 1 0% !important;
@@ -439,18 +449,9 @@ html body footer a {
     width: 100%;
     max-width: 100%;
   }
-  .publications .row > .abbr picture,
   .publications .row > .abbr figure {
-    display: block;
     width: 100%;
-  }
-  .publications .row > .abbr img.preview,
-  .publications .row > .abbr .preview,
-  .publications .row > .abbr figure img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: 280px;
+    height: 240px;
   }
   html body footer,
   html body footer.fixed-bottom {
@@ -559,4 +560,16 @@ article h3 {
 }
 .cy-tags {
   margin-top: 1.6rem;
+}
+
+/* ---------- award block (certificate image) ---------- */
+.publications .award.hidden img,
+.publications div.award img {
+  display: block;
+  max-width: min(100%, 560px);
+  height: auto;
+  margin: 0.6rem 0 0.4rem;
+  border: 1px solid var(--cy-line);
+  border-radius: 8px;
+  cursor: zoom-in;
 }
